@@ -8,7 +8,7 @@ People Operations leader with 12+ years across Canada, the US and India. I build
 - **Case study 01:** Building an in-house candidate-tracking system (client submissions 24h → 2h)
 - **Case study 02:** Standardizing onboarding across states (~75% fewer form errors)
 - **Case study 03:** Leading a 12-person recruiting team
-- Experience, skills and a downloadable resume
+- Experience, skills
 
 ## Contact
 - Email: swmananth@gmail.com
