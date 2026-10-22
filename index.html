@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sowmya Ramakrishnan</title>
+<meta name="description" content="Sowmya Ramakrishnan: People Operations leader who builds HR systems and processes from the ground up. Case studies, experience and contact.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #faf7f4;
+    --ink: #1f2328;
+    --muted: #5b6370;
+    --line: #ebe5df;
+    --accent: #e8641b;
+    --accent-ink: #b8500f;
+    --accent-soft: #fdf0e7;
+    --accent-mid: #f6b88f;
+    --accent-deep: #7a3510;
+    --card: #ffffff;
+    --ok: #23703d; --ok-bg: #e5f4ea;
+    --warn: #8a6400; --warn-bg: #fff5d6;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 6px 20px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16130f; --bg-soft: #1e1a16; --ink: #f1ece6; --muted: #a9a198; --line: #332c25;
+      --accent: #f2803d; --accent-ink: #f5a26f; --accent-soft: #2c1d13; --accent-mid: #8a4a22; --accent-deep: #f6c7a6;
+      --card: #1e1a16; --ok: #7ccf97; --ok-bg: #1b2c20; --warn: #e3c26a; --warn-bg: #2d2615;
+      --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16130f; --bg-soft: #1e1a16; --ink: #f1ece6; --muted: #a9a198; --line: #332c25;
+    --accent: #f2803d; --accent-ink: #f5a26f; --accent-soft: #2c1d13; --accent-mid: #8a4a22; --accent-deep: #f6c7a6;
+    --card: #1e1a16; --ok: #7ccf97; --ok-bg: #1b2c20; --warn: #e3c26a; --warn-bg: #2d2615;
+    --shadow: none;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.6; }
+  a { color: var(--accent-ink); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+  /* Nav */
+  nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; gap: 12px; }
+  .brand { font-weight: 700; text-decoration: none; color: var(--ink); white-space: nowrap; }
+  .brand span { color: var(--accent); }
+  .links { display: flex; gap: 18px; font-size: 14.5px; }
+  .links a { color: var(--muted); text-decoration: none; }
+  .links a:hover { color: var(--accent-ink); }
+  @media (max-width: 640px) { .links .hide-sm { display: none; } }
+
+  /* Hero */
+  .hero { padding: 64px 0 40px; }
+  .eyebrow { color: var(--accent-ink); font-weight: 600; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 10px 0 16px; letter-spacing: -.01em; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p.lead { font-size: clamp(17px, 2.2vw, 19px); color: var(--muted); max-width: 680px; margin: 0 0 26px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { display: inline-block; padding: 11px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.ghost { border: 1px solid var(--line); color: var(--ink); background: var(--card); }
+  .btn:hover { filter: brightness(1.05); }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 36px 0 12px; }
+  @media (min-width: 720px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 960px) { .stats { grid-template-columns: repeat(6, 1fr); } }
+  .stat { background: var(--accent-soft); border-radius: 10px; padding: 14px 12px; }
+  .stat b { display: block; font-size: 24px; color: var(--accent-ink); line-height: 1.15; }
+  .stat span { font-size: 13px; color: var(--muted); line-height: 1.35; display: block; margin-top: 4px; }
+
+  section { padding: 48px 0; }
+  section.alt { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  h2.sec { font-size: clamp(24px, 3.4vw, 30px); margin: 0 0 6px; }
+  p.sec-sub { color: var(--muted); margin: 0 0 28px; max-width: 680px; }
+
+  /* Case studies */
+  .case { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; margin-bottom: 22px; box-shadow: var(--shadow); }
+  @media (min-width: 720px) { .case { padding: 32px; } }
+  .kicker { font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+  .case h3 { font-size: clamp(20px, 2.8vw, 25px); line-height: 1.25; margin: 6px 0 14px; }
+  .meta { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); border-radius: 8px; margin-bottom: 20px; }
+  @media (min-width: 720px) { .meta { grid-template-columns: repeat(4, 1fr); } }
+  .meta div { padding: 9px 12px; font-size: 14px; border-bottom: 1px solid var(--line); }
+  .meta b { display: block; font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+  .cols { display: grid; gap: 20px; }
+  @media (min-width: 720px) { .cols { grid-template-columns: 1fr 1fr; } }
+  h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent-ink); margin: 0 0 6px; }
+  .case p { margin: 0 0 10px; }
+  .steps { display: grid; gap: 10px; margin: 8px 0 20px; }
+  @media (min-width: 720px) { .steps { grid-template-columns: repeat(4, 1fr); } .steps.three { grid-template-columns: repeat(3, 1fr); } }
+  .step { border-top: 3px solid var(--accent); background: var(--bg-soft); padding: 12px 13px; border-radius: 0 0 8px 8px; font-size: 14.5px; }
+  .step b { display: block; margin-bottom: 3px; }
+  .results { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 8px 0 20px; }
+  @media (min-width: 720px) { .results { grid-template-columns: repeat(4, 1fr); } .results.two { grid-template-columns: repeat(2, 1fr); } }
+  .res { border: 1px solid var(--accent-mid); border-radius: 8px; padding: 10px 12px; }
+  .res b { font-size: 22px; color: var(--accent-ink); display: block; line-height: 1.2; }
+  .res span { font-size: 13px; color: var(--muted); }
+  .lesson { border-left: 3px solid var(--accent); background: var(--accent-soft); padding: 10px 14px; border-radius: 0 6px 6px 0; font-style: italic; margin-top: 16px; }
+
+  /* ATS mockup */
+  .app { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #fff; color: #1f2328; margin-top: 4px; }
+  .chrome { background: #f3efeb; height: 22px; display: flex; align-items: center; padding: 0 10px; gap: 5px; }
+  .chrome i { width: 9px; height: 9px; border-radius: 50%; background: #d6cdc4; }
+  .app-body { display: grid; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .app-body { grid-template-columns: 150px 1fr; } }
+  .side { background: #e8641b; color: #fff; padding: 12px 0; font-size: 13px; }
+  .side .logo { font-weight: 700; padding: 0 14px 10px; }
+  .side .item { padding: 5px 14px; opacity: .9; }
+  .side .on { background: rgba(255,255,255,.22); font-weight: 600; opacity: 1; }
+  @media (max-width: 719px) { .side { display: flex; overflow-x: auto; padding: 8px; gap: 4px; } .side .logo { padding: 5px 8px; } .side .item { white-space: nowrap; border-radius: 4px; } }
+  .main { padding: 14px; min-width: 0; }
+  .main-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .main-head b { font-size: 15px; }
+  .main-head span { font-size: 12px; color: #5b6370; border: 1px solid #ebe5df; border-radius: 5px; padding: 2px 8px; }
+  .kpis { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
+  @media (min-width: 720px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+  .kpi { border: 1px solid #ebe5df; border-radius: 6px; padding: 8px 10px; }
+  .kpi span { font-size: 12px; color: #5b6370; display: block; }
+  .kpi b { font-size: 21px; }
+  .kpi em { font-style: normal; font-size: 11px; color: #23703d; margin-left: 4px; }
+  .panels { display: grid; gap: 10px; }
+  @media (min-width: 900px) { .panels { grid-template-columns: 1.05fr 1fr; } }
+  .panel { border: 1px solid #ebe5df; border-radius: 6px; padding: 10px; min-width: 0; }
+  .panel-t { font-size: 13px; font-weight: 600; margin-bottom: 6px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px; }
+  .legend { font-weight: 400; color: #5b6370; font-size: 11px; }
+  .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 3px 0 8px; }
+  .tbl { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { text-align: left; color: #5b6370; font-weight: 600; border-bottom: 1px solid #ebe5df; padding: 4px 5px; }
+  td { padding: 5px; border-bottom: 1px solid #f2eeea; white-space: nowrap; }
+  .pill { border-radius: 10px; padding: 1px 8px; font-size: 11px; font-weight: 600; }
+  .p-sub { background: #fdf0e7; color: #b8500f; } .p-int { background: #fff5d6; color: #8a6400; } .p-pl { background: #e5f4ea; color: #23703d; }
+  .caption { font-size: 12.5px; color: var(--muted); text-align: center; margin-top: 8px; }
+
+  /* Experience */
+  .timeline { border-left: 2px solid var(--line); margin-left: 6px; }
+  .job { position: relative; padding: 0 0 26px 22px; }
+  .job::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; }
+  .job-head b { font-size: 17px; }
+  .dates { color: var(--muted); font-size: 14px; }
+  .co { color: var(--muted); font-size: 15px; margin-bottom: 6px; }
+  .job ul { margin: 6px 0 0; padding-left: 18px; }
+  .job li { margin-bottom: 4px; }
+  .note { color: var(--muted); font-style: italic; font-size: 14px; }
+
+  .grid2 { display: grid; gap: 24px; }
+  @media (min-width: 720px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+  .chips span { display: inline-block; border: 1px solid var(--accent-mid); border-radius: 14px; padding: 3px 11px; margin: 0 6px 8px 0; font-size: 14px; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .box p { margin: 0 0 8px; }
+
+  .contact { background: var(--accent); color: #fff; border-radius: 16px; padding: 30px 24px; text-align: center; }
+  .contact h2 { margin: 0 0 8px; font-size: clamp(24px, 3.4vw, 30px); }
+  .contact p { margin: 0 auto 20px; max-width: 620px; opacity: .95; }
+  .contact .btn { background: #fff; color: #b8500f; margin: 4px; }
+  .contact .btn.outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.7); }
+  footer { color: var(--muted); font-size: 13.5px; text-align: center; padding: 26px 0 36px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Sowmya <span>Ramakrishnan</span></a>
+    <div class="links">
+      <a href="#work">Case studies</a>
+      <a class="hide-sm" href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">People Operations · HR Systems &amp; Process</div>
+    <h1>I build HR functions <em>from the ground up.</em></h1>
+    <p class="lead">I'm Sowmya, a People Operations leader with 12+ years across Canada, the US and India. I find the people-side problems that slow a growing business down, propose the fix, and see it through.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See my case studies</a>
+      <a class="btn ghost" href="Sowmya_Ramakrishnan_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/sowmya-r-hr/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>24h → 2h</b><span>client submission time</span></div>
+      <div class="stat"><b>3 → 1 day</b><span>company-wide turnaround</span></div>
+      <div class="stat"><b>~75%</b><span>fewer onboarding form errors</span></div>
+      <div class="stat"><b>~40</b><span>hires a year, personally</span></div>
+      <div class="stat"><b>50</b><span>people: Canada + US payroll &amp; compliance</span></div>
+      <div class="stat"><b>12</b><span>person team led</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="alt" id="work">
+  <div class="wrap">
+    <h2 class="sec">Case studies</h2>
+    <p class="sec-sub">Three problems I owned end to end at G6 Technologies Canada, a lean staffing and consulting firm where I run HR and recruiting and report to the COO.</p>
+
+    <!-- Case 1 -->
+    <article class="case">
+      <div class="kicker">Case study 01 · HR systems</div>
+      <h3>Building an in-house candidate-tracking system when a commercial ATS wasn't in the budget</h3>
+      <div class="meta">
+        <div><b>My role</b>Project lead &amp; business owner</div>
+        <div><b>Team</b>Me + 1 developer</div>
+        <div><b>Users</b>15, every day</div>
+        <div><b>Status</b>Still in use</div>
+      </div>
+      <div class="cols">
+        <div><h4>The problem</h4><p>Every sourced candidate lived in someone's Gmail inbox. Recruiters forwarded resumes by hand, there was no shared pipeline, and nobody could see what had already been submitted. Client submissions took a full day, and we were losing placements to faster competitors. A commercial ATS was out of budget.</p></div>
+        <div><h4>The goal</h4><p>Give every recruiter instant access to vetted candidates so we could submit to new clients the same day, without adding software spend.</p></div>
+      </div>
+      <h4 style="margin-top:8px">What I did</h4>
+      <div class="steps">
+        <div class="step"><b>1 · Built the case</b>Took a build-vs-buy cost comparison to the CEO, framed around the cost of doing nothing: lost deals and hours spent searching inboxes.</div>
+        <div class="step"><b>2 · Defined it</b>Wrote the requirements for two modules, Job Postings and Applicants, holding only vetted candidates to keep the data clean.</div>
+        <div class="step"><b>3 · Tested it</b>Partnered with a developer and ran user acceptance testing on each module before release.</div>
+        <div class="step"><b>4 · Rolled it out</b>Trained the team, ran weekly feedback meetings, and still own the roadmap as features are added.</div>
+      </div>
+      <h4>Results</h4>
+      <div class="results">
+        <div class="res"><b>24h → 2h</b><span>time to submit candidates to clients</span></div>
+        <div class="res"><b>3 → 1 day</b><span>company-wide turnaround</span></div>
+        <div class="res"><b>15</b><span>daily users</span></div>
+        <div class="res"><b>$0</b><span>licence spend</span></div>
+      </div>
+
+      <div class="app" role="img" aria-label="Illustrative recreation of the recruiting dashboard with sample data">
+        <div class="chrome"><i></i><i></i><i></i></div>
+        <div class="app-body">
+          <div class="side">
+            <div class="logo">Candidate Tracker</div>
+            <div class="item on">Dashboard</div><div class="item">Job Postings</div><div class="item">Applicants</div>
+            <div class="item">Submissions</div><div class="item">Interviews</div><div class="item">Placements</div><div class="item">Reports</div>
+          </div>
+          <div class="main">
+            <div class="main-head"><b>Recruiting Dashboard</b><span>Last 6 weeks ▾</span></div>
+            <div class="kpis">
+              <div class="kpi"><span>Submissions</span><b>212</b><em>▲ 14%</em></div>
+              <div class="kpi"><span>Interviews</span><b>71</b><em>▲ 9%</em></div>
+              <div class="kpi"><span>Placements</span><b>18</b><em>▲ 3</em></div>
+              <div class="kpi"><span>Avg. time to submit</span><b>2.1h</b></div>
+            </div>
+            <div class="panels">
+              <div class="panel">
+                <div class="panel-t">Weekly pipeline
+                  <span class="legend"><i style="background:#e8641b"></i>Submissions<i style="background:#f6b88f"></i>Interviews<i style="background:#7a3510"></i>Placements</span>
+                </div>
+                <svg viewBox="0 0 260 104" width="100%" aria-hidden="true">
+                  <g stroke="#f2eeea"><line x1="18" y1="10" x2="258" y2="10"/><line x1="18" y1="40" x2="258" y2="40"/><line x1="18" y1="70" x2="258" y2="70"/></g>
+                  <line x1="18" y1="90" x2="258" y2="90" stroke="#d9d2cb"/>
+                  <g font-size="6" fill="#8a919c"><text x="2" y="12">40</text><text x="2" y="42">25</text><text x="2" y="72">10</text><text x="6" y="92">0</text></g>
+                  <rect x="26" y="28" width="9" height="62" rx="1.5" fill="#e8641b"/><rect x="36" y="70" width="9" height="20" rx="1.5" fill="#f6b88f"/><rect x="46" y="86" width="9" height="4" rx="1.5" fill="#7a3510"/>
+                  <rect x="66" y="24" width="9" height="66" rx="1.5" fill="#e8641b"/><rect x="76" y="68" width="9" height="22" rx="1.5" fill="#f6b88f"/><rect x="86" y="84" width="9" height="6" rx="1.5" fill="#7a3510"/>
+                  <rect x="106" y="18" width="9" height="72" rx="1.5" fill="#e8641b"/><rect x="116" y="66" width="9" height="24" rx="1.5" fill="#f6b88f"/><rect x="126" y="84" width="9" height="6" rx="1.5" fill="#7a3510"/>
+                  <rect x="146" y="22" width="9" height="68" rx="1.5" fill="#e8641b"/><rect x="156" y="66" width="9" height="24" rx="1.5" fill="#f6b88f"/><rect x="166" y="86" width="9" height="4" rx="1.5" fill="#7a3510"/>
+                  <rect x="186" y="14" width="9" height="76" rx="1.5" fill="#e8641b"/><rect x="196" y="64" width="9" height="26" rx="1.5" fill="#f6b88f"/><rect x="206" y="82" width="9" height="8" rx="1.5" fill="#7a3510"/>
+                  <rect x="226" y="10" width="9" height="80" rx="1.5" fill="#e8641b"/><rect x="236" y="64" width="9" height="26" rx="1.5" fill="#f6b88f"/><rect x="246" y="82" width="9" height="8" rx="1.5" fill="#7a3510"/>
+                  <g font-size="6" fill="#8a919c" text-anchor="middle"><text x="40" y="100">Wk 1</text><text x="80" y="100">Wk 2</text><text x="120" y="100">Wk 3</text><text x="160" y="100">Wk 4</text><text x="200" y="100">Wk 5</text><text x="240" y="100">Wk 6</text></g>
+                </svg>
+              </div>
+              <div class="panel">
+                <div class="panel-t">Recent activity</div>
+                <div class="tbl"><table>
+                  <tr><th>Req</th><th>Role</th><th>Client</th><th>Stage</th></tr>
+                  <tr><td>R-1042</td><td>Data Engineer</td><td>Client A</td><td><span class="pill p-pl">Placed</span></td></tr>
+                  <tr><td>R-1039</td><td>Cloud Architect</td><td>Client C</td><td><span class="pill p-int">Interview</span></td></tr>
+                  <tr><td>R-1047</td><td>Business Analyst</td><td>Client B</td><td><span class="pill p-sub">Submitted</span></td></tr>
+                  <tr><td>R-1036</td><td>Scrum Master</td><td>Client A</td><td><span class="pill p-int">Interview</span></td></tr>
+                  <tr><td>R-1048</td><td>UI/UX Designer</td><td>Client D</td><td><span class="pill p-sub">Submitted</span></td></tr>
+                  <tr><td>R-1031</td><td>QA Analyst</td><td>Client B</td><td><span class="pill p-pl">Placed</span></td></tr>
+                </table></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caption">Illustrative recreation with sample data. The original system and its data are confidential to G6 Technologies.</div>
+      <div class="lesson">Lesson: a simple system people actually use beats an expensive one they don't. Clean data comes from deciding up front what goes in.</div>
+    </article>
+
+    <!-- Case 2 -->
+    <article class="case">
+      <div class="kicker">Case study 02 · HR operations &amp; compliance</div>
+      <h3>Standardizing onboarding across states to stop errors reaching candidates and payroll</h3>
+      <div class="meta">
+        <div><b>My role</b>Process owner</div>
+        <div><b>Scope</b>All account managers</div>
+        <div><b>Regions</b>Canada + US hires</div>
+        <div><b>Result</b>~75% fewer form errors</div>
+      </div>
+      <div class="cols">
+        <div>
+          <h4>The problem</h4>
+          <p>Each account manager onboarded new hires their own way. Forms were scattered across inboxes and drives, so outdated, duplicate and wrong-state forms kept reaching candidates and payroll, creating rework and compliance risk.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Compiled current forms by state into one shared, version-controlled library.</li>
+            <li>Wrote one onboarding checklist and walked every account manager through it.</li>
+            <li>Supported HRIS testing and compliance checks so the process held up.</li>
+            <li>Prototyped an e-onboarding module; developers built the first version from it.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Results</h4>
+          <div class="results two">
+            <div class="res"><b>~75%</b><span>fewer duplicate or expired forms</span></div>
+            <div class="res"><b>1</b><span>process for every account manager</span></div>
+          </div>
+          <div class="lesson">Lesson: most compliance problems are process problems. Current forms, one checklist and clear communication stop errors before anyone has to fix them.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Case 3 -->
+    <article class="case">
+      <div class="kicker">Case study 03 · People leadership</div>
+      <h3>Running a 12-person recruiting team while staying hands-on</h3>
+      <div class="steps three">
+        <div class="step"><b>Capacity-based allocation</b>Every requisition is assigned by recruiter capacity and strength, so work spreads fairly and hard roles get the right person.</div>
+        <div class="step"><b>Monthly scorecard</b>I built the recruiter performance scorecard the COO reviews each month, turning output into clear, comparable measures for coaching.</div>
+        <div class="step"><b>Resolving conflict</b>When a new client's manager escalated about candidate quality, I heard both sides separately, translated the real expectations and coached the recruiter through it. The role was filled and the client kept.</div>
+      </div>
+      <p style="margin:0">Alongside the team, I personally make about 40 hires a year and run payroll, benefits and compliance for up to 50 people across Canada and the US, so I understand the work I'm asking the team to do.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 class="sec">Experience</h2>
+    <p class="sec-sub">Recruiting since 2012; HR operations leadership since 2024.</p>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head"><b>Vice President, HR Operations</b><span class="dates">Mar 2024 – Present</span></div>
+        <div class="co">G6 Technologies Canada · Toronto · Head of HR &amp; Recruiting, Canada</div>
+        <div class="note">Rehired into this role after two years at Levio.</div>
+        <ul>
+          <li>Built the in-house candidate-tracking system and standardized onboarding (case studies above).</li>
+          <li>Ceipal system administrator: configuration, integrations, vendor relationship, training and weekly executive reporting.</li>
+          <li>Payroll, tax coordination, benefits sourcing and statutory compliance for up to 50 employees and contractors in Canada and the US.</li>
+          <li>COO's main operational partner on employment-law and licensing vendors, MSAs, SOWs and purchase orders.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><b>Senior Talent Acquisition Advisor</b><span class="dates">Apr 2022 – Feb 2024</span></div>
+        <div class="co">Levio · Toronto</div>
+        <ul>
+          <li>Full-cycle recruitment for professional and technology roles across Canada, including senior and specialized searches.</li>
+          <li>Advised hiring managers on sourcing strategy, interview design and compensation negotiation; supported recruitment compliance and inclusive hiring.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-head"><b>Senior Technical Recruiter &amp; Account Manager</b><span class="dates">Jun 2020 – Mar 2022</span></div>
+        <div class="co">G6 Technologies Canada · Toronto</div>
+        <ul>
+          <li>Managed key client accounts and MSAs; full-cycle technical recruiting; built a candidate database and workflow tool; prepared contracts and payroll inputs.</li>
+        </ul>
+      </div>
+      <div class="job" style="padding-bottom:0">
+        <div class="job-head"><b>Talent Acquisition Executive</b><span class="dates">Oct 2012 – Oct 2016</span></div>
+        <div class="co">GEVAL6 Inc. · India</div>
+        <ul>
+          <li>Full-cycle recruitment for US technology roles across Cloud, Machine Learning, Data, UI/UX, PMO and Software Engineering; trained and mentored new recruiters.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap grid2">
+    <div>
+      <h2 class="sec" style="font-size:22px">What I bring</h2>
+      <div class="chips" style="margin-top:12px">
+        <span>HR operations design</span><span>HR systems &amp; HRIS</span><span>Process improvement</span>
+        <span>Canada / US payroll &amp; compliance</span><span>Benefits sourcing</span><span>Onboarding &amp; offboarding</span>
+        <span>Team leadership</span><span>Performance scorecards</span><span>Full-cycle recruiting</span>
+        <span>Vendor &amp; contract management</span><span>Executive partnership</span><span>AI-enabled automation</span>
+      </div>
+    </div>
+    <div class="box">
+      <p><b>Tools:</b> Ceipal (system admin), Greenhouse, Workday (working knowledge), Jira, DocuSign, SharePoint, Excel</p>
+      <p><b>Education:</b> Bachelor of Finance, Jain University · Coursework in Computer Information Systems, Harper College (IL)</p>
+      <p style="margin:0"><b>Certification:</b> SHRM-CP in progress</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Get in touch</h2>
+      <p>I enjoy connecting with People and HR leaders about building HR systems and processes that scale, and about making people operations simpler for growing teams.</p>
+      <a class="btn" href="mailto:swmananth@gmail.com">swmananth@gmail.com</a>
+      <a class="btn outline" href="https://www.linkedin.com/in/sowmya-r-hr/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Sowmya Ramakrishnan · Greater Toronto Area, Canada</footer>
+
+</body>
+</html>
